@@ -27,7 +27,7 @@ node{
                 def testIssue = [fields: [ project: [key: 'DEM'],
                                  summary: 'Failure',
                                  description: 'Build Failed',
-                                 issuetype: [name : 'Task']]]
+                                 issuetype: [name : 'Bug']]]
 
       response = jiraNewIssue issue: testIssue, site: 'JIRA'
 
