@@ -11,7 +11,7 @@ node{
     } 
         
         stage('JIRA') {
-    def testIssue = [fields: [ project: [key: 'APT'],
+    def testIssue = [fields: [ project: [key: 'DEM'],
                                  summary: 'New JIRA Created from Jenkins.',
                                  description: 'New JIRA Created from Jenkins.',
                                  issuetype: [name : 'Task']]]
