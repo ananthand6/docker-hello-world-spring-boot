@@ -9,7 +9,7 @@ node{
       sh "${mavenCMD} clean package"
       
         post{   
-        stage('JIRA') {
+        always {
     def testIssue = [fields: [ project: [key: 'DEM'],
                                  summary: 'New JIRA Created from Jenkins.',
                                  description: 'New JIRA Created from Jenkins.',
